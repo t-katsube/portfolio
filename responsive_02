@@ -1,0 +1,144 @@
+/* タブレット向けレイアウト */
+@media all and (max-width: 1000px) {
+	.container{
+		width:100%;
+		padding:0 15px;
+	}
+	
+	.profile-title h2,.works-title h2{
+		font-size:35px;
+	}
+	
+	.profile_sq,.works_sq{
+		height:48px;
+	}
+	
+	.name-top h3{
+		font-size:20px;
+	}
+	
+	.name-top p{
+		font-size:13px;
+	}	
+	
+	.name-contents p{
+		font-size:14px;
+	}
+	
+	.skill-title h3{
+		font-size:20px;
+	}
+	
+	.skill-bottom{
+		margin-top:10px;
+	}
+	
+	.skill-name{
+		font-size:12px;
+	}
+	
+	.right-name{
+		font-size:30px;
+		top:23%;
+	}
+	
+	.left-name{
+		font-size:30px;
+		top:23%;
+	}
+}
+
+@media all and (max-width: 670px) {
+	.title p{
+		font-size:16px;
+	}
+
+	.profile{
+		height:1200px;
+	}
+	
+	.left-container img{
+		float:none;
+		display:none;
+	}
+	
+	.profile-responsive{
+		display:block;
+		width:70%;
+		margin: 0 auto;
+		padding-top:20px;
+	}
+	
+	.right-message{
+		float:none;
+		width:100%;
+	}
+	
+	.profile-title h2,.works-title h2{
+		font-size:35px;
+	}
+	
+	.profile_sq,.works_sq{
+		height:48px;
+	}
+	
+	.name-top h3{
+		font-size:25px;
+	}
+	
+	.name-top p{
+		font-size:15px;
+	}	
+	
+	.name-contents p{
+		font-size:18px;
+	}
+	
+	.skill-title h3{
+		font-size:25px;
+	}
+	
+	.skill-bottom{
+		margin-top:15px;
+	}
+	
+	.skill-name{
+		font-size:15px;
+	}
+	
+	.skills-icon img{
+	width:50%;
+	}
+	
+	.works-message{
+		padding:100px 0px;
+		height:2500px;
+	}
+	
+	.right-content,.left-content{
+		height:6.2%;
+		padding-bottom: 300px;
+	}
+	
+	.white-filter-r,.white-filter-l{
+		width:100%;
+		float:none;
+	}
+	
+	.right-content img,.left-content img{
+		width:100%;
+		left:0;
+	}
+	
+	.right-name,.left-name {
+		display:none;
+	}
+	
+	.content-responsive p{
+		display:block;
+		text-align: center;
+		margin:0 auto;
+		font-size:20px;
+	}
+	
+}
