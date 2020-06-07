@@ -61,10 +61,31 @@ header li{
 
 header img{
 	padding:17px 0px;
+	cursor: pointer;
 }
 
 header a{
 	color:white;
+	position: relative;
+    display: inline-block;
+}
+
+header a::after {
+  position: absolute;
+  bottom: 0px;
+  left: 0;
+  content: '';
+  width: 100%;
+  height: 1px;
+  background: #fff;
+  transform: scale(0, 1);
+  transform-origin: right top;
+  transition: transform .3s;
+}
+
+header a:hover::after {
+  transform-origin: left top;
+  transform: scale(1, 1);
 }
 
 
@@ -80,7 +101,7 @@ header a{
 	padding:365px 0px;
 	margin:0 auto;
 	position:relative;
-	animation-name: fadein;
+	animation-name: fadeinBottom;
     animation-duration: 2s;
 }
 
@@ -106,6 +127,7 @@ header a{
 
 /*Profile*/
 
+
 .clear{
 	clear:left;
 }
@@ -118,12 +140,16 @@ header a{
 	padding:100px 0px;
 }
 
+
 /*
 .profile-message{
 	padding:100px 0px;
 	margin:0 auto;
 }
 */
+.opacity{
+	opacity:0;
+}
 
 .profile-title,.works-title{
 	width:38%;
@@ -336,6 +362,7 @@ header a{
 	z-index:10;
 }
 
+
 .left-name{
 	display:inline-block;
 	font-size:44px;
@@ -369,6 +396,32 @@ header a{
 	display: flex;
   	justify-content: center;
   	align-items: center;
+	overflow: hidden;
+}
+
+.rigt-names02 {
+  overflow: hidden;
+}
+.right-names {
+  position: relative;
+  z-index: 2;
+}
+.right-names:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  background-color: #fff;
+  transition: all 200ms linear;
+}
+.right-names:hover {
+  color: #000;
+}
+.right-names:hover:before {
+  left: 0;
 }
 
 .left-names{
@@ -378,6 +431,32 @@ header a{
 	display: flex;
   	justify-content: center;
   	align-items: center;
+	overflow: hidden;
+}
+
+.left-names02 {
+  overflow: hidden;
+}
+.left-names {
+  position: relative;
+  z-index: 2;
+}
+.left-names:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  background-color: #fff;
+  transition: all 200ms linear;
+}
+.left-names:hover{
+  color: #000;
+}
+.left-names:hover:before{
+  left: 0;
 }
 
 
@@ -403,15 +482,23 @@ footer li{
 
 footer a{
 	color:white;
+	transition:0.5s
 }
 
+footer a:hover{
+	color:#65C6C4;
+	transition:0.5s
+}
 
 footer img{
-	padding:30px;
+	padding:30px 0px;
+	cursor: pointer;
+	
 }
 
 
 /*animete*/
+/*
 .white-filter-r:hover{
 	opacity:0;
 	transition:1.0s;
@@ -421,15 +508,35 @@ footer img{
 	opacity:0;
 	transition:1.0s;
 }
+*/
 
-@keyframes fadein {
+.fadein-bottom{
+	animation-name: fadeinBottom;
+    animation-duration: 2s;
+}
+
+@keyframes fadeinBottom {
 from {
     opacity: 0;
     transform: translateY(20px);
-}
+	}
 to {
     opacity: 1;
     transform: translateY(0);
+	}
+}
+.fadein-left{
+	animation-name: fadeinLeft;
+    animation-duration: 2s;
 }
 
-
+@keyframes fadeinLeft {
+from {
+    opacity: 0;
+    transform: translateX(-20px);
+}
+to {
+    opacity: 1;
+    transform: translateX(0);
+}
+}
