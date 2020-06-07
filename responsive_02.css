@@ -1,8 +1,13 @@
 /* タブレット向けレイアウト */
-@media all and (max-width: 1000px) {
+@media all and (max-width: 1100px) {
 	.container{
 		width:100%;
 		padding:0 15px;
+	}
+	
+	.profile{
+		height:auto;
+		padding:100px 0px 150px 0px;
 	}
 	
 	.profile-title h2,.works-title h2{
@@ -49,12 +54,32 @@
 }
 
 @media all and (max-width: 670px) {
-	.title p{
-		font-size:16px;
+	/*header*/
+	.container{
+		width:100%;
+		padding:0 15px;
 	}
-
+	header{
+		font-size:14px;
+		height:60px;
+	}
+	
+	header ul{
+		padding:20px 0px 20px 0px;
+	}
+	
+	header img{
+		width:10%;
+		padding:12px 0px 10px 0px;
+	}
+	
+    /*topview	*/
+	.title p{
+		font-size:12px;
+	}
+	/*profile	*/
 	.profile{
-		height:1200px;
+		height:auto;
 	}
 	
 	.left-container img{
@@ -91,7 +116,7 @@
 	}	
 	
 	.name-contents p{
-		font-size:18px;
+		font-size:14px;
 	}
 	
 	.skill-title h3{
@@ -103,21 +128,21 @@
 	}
 	
 	.skill-name{
-		font-size:15px;
+		font-size:12px;
 	}
 	
 	.skills-icon img{
 	width:50%;
 	}
-	
+    /*	works*/
 	.works-message{
-		padding:100px 0px;
-		height:2500px;
+		padding:100px 0px 150px 0px;
+		height:auto;
 	}
 	
 	.right-content,.left-content{
 		height:6.2%;
-		padding-bottom: 300px;
+		padding-bottom: 200px;
 	}
 	
 	.white-filter-r,.white-filter-l{
@@ -139,6 +164,21 @@
 		text-align: center;
 		margin:0 auto;
 		font-size:20px;
+		z-index:50;
 	}
+	
+	.content-responsive{
+		z-index:50;
+	}
+	/*footer	*/
+	footer {
+		font-size:14px;
+		height:auto;
+	}
+	footer img{
+		width:10%;
+		padding:32px 0px;
+	}
+	
 	
 }
