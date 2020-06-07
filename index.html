@@ -4,10 +4,12 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Katsube Taisei</title>
-<link rel="stylesheet" href="index_responsive.css">
+<link rel="stylesheet" href="index.css">
 <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
 <link rel="stylesheet" href="responsive_02.css">
-
+<!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">-->
+<!--<link rel="stylesheet" href="animate.min.css">-->
+<script src ="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
 
 </head>
 
@@ -19,15 +21,15 @@
 				<li>/</li>
 				<li><a href ="#works-head">Works</a></li>
 			</ul>
-			<a href="index.html"><img src ="Image/toppage_2/logoMark.png"></a>
+			<a href="index_responsive.html"><img src ="Image/toppage_2/logoMark.png"></a>
 		</div>
 	</header>
 	
 	<div class ="top-view">
 		<div class = "container">
-			<div class ="title">
-				<h1><img class ="logo" src ="Image/toppage_2/logo.png" alt ="勝部泰成 ポートフォリオ 芸工"></h1>
-				<p>Here is a collection of my works from 2017 through 2020</p>
+			<div class ="title" id ="title">
+				<h1><img class ="logo" id ="logo"src ="Image/toppage_2/logo.png" alt ="勝部泰成 ポートフォリオ 芸工"></h1>
+				<p id ="sub-title">Here is a collection of my works from 2017 through 2020</p>
 			</div>
 		</div>
 	</div>
@@ -50,7 +52,7 @@
 					<div class ="right-message">
 						<div class = "name">
 							<div class ="name-top">
-								<h3>勝部 泰成<a href ="index.html"><span class="fa fa-facebook-square my-facebook"></span></a></h3>
+								<h3>勝部 泰成<a href ="https://www.facebook.com/katsubetaisei/"><span class="fa fa-facebook-square my-facebook"></span></a></h3>
 								<p>Katsube Taisei</p>
 							</div>
 							<div class ="name-contents">
@@ -128,8 +130,8 @@
 							</div>
 						</div>
 					</div>
+					<div class ="clear"></div>
 				</div>
-				<div class ="clear"></div>
 		</div>
 	</div>
 	
@@ -155,9 +157,6 @@
 						</div>
 					</div>
 				</div>
-				<div class ="content-responsive">
-						<p>01.Fashion Show</p>
-				</div>
 				
 				<div class ="left-content">
 <!--					<div class ="white-filter-l"></div>-->
@@ -172,9 +171,11 @@
 						</div>
 					</div>
 				</div>
+<!--
 				<div class ="content-responsive">
 						<p>02.Media Art</p>
 				</div>
+-->
 				
 				<div class ="right-content">
 					<img  class ="white-filter-r" src ="Image/toppage_2/white_opacity.png">
@@ -188,9 +189,11 @@
 						</div>
 					</div>
 				</div>
+<!--
 				<div class ="content-responsive">
 						<p>03.Serious Game</p>
 				</div>
+-->
 				
 				
 				<div class ="left-content">
@@ -205,9 +208,11 @@
 						</div>
 					</div>
 				</div>
+<!--
 				<div class ="content-responsive">
 						<p>04.Lighting</p>
 				</div>
+-->
 				
 				<div class ="right-content">
 					<img  class ="white-filter-r" src ="Image/toppage_2/white_opacity.png">
@@ -221,9 +226,11 @@
 						</div>
 					</div>
 				</div>
+<!--
 				<div class ="content-responsive">
 					<p>05.Programing</p>
 				</div>
+-->
 				
 			</div>
 		</div>
@@ -238,6 +245,6 @@
 			<a href="index.html"><img src ="Image/toppage_2/logoMark.png"></a>
 	 	</div>
 	</footer>
-	
+	<script src ="index.js"></script>
 </body>
 </html>
