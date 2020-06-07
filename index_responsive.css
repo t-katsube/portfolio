@@ -45,6 +45,7 @@ header{
 	z-index:100;
 	font-weight:normal;
 	font-size:16px;
+	display:none;
 }
 
 
@@ -72,14 +73,20 @@ header a{
 	background-image:url("Image/toppage_2/topview_0601.png");
 	background-size: cover;
 	width:100%;
+/*	height:845px;*/
 }
 
-.title{
+.title-active{
 	padding:365px 0px;
 	margin:0 auto;
 	position:relative;
+	animation-name: fadein;
+    animation-duration: 2s;
 }
 
+.top-view img{
+	width:100%;
+}
 
 
 .title p{
@@ -91,6 +98,9 @@ header a{
 
 .title img{
 	width:100%;
+}
+
+.logo{
 }
 
 
@@ -411,3 +421,15 @@ footer img{
 	opacity:0;
 	transition:1.0s;
 }
+
+@keyframes fadein {
+from {
+    opacity: 0;
+    transform: translateY(20px);
+}
+to {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+
