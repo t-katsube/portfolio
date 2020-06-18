@@ -1,0 +1,194 @@
+/* タブレット向けレイアウト */
+@media all and (max-width: 1100px) {
+	.container{
+		width:100%;
+		padding:0 15px;
+	}
+/*header*/
+	header{
+		font-size:14px;
+	}
+	
+	header li{
+		margin-left:15px;
+	}
+	
+	header img{
+		width:40px;
+	}
+/*programmer	*/
+	.transition_1,.transition_2{
+		width:12%;
+		padding:0 10px;
+	 }
+	.index_p{
+		font-size:9px;
+		display: none;
+	}
+	
+	.pc{
+		font-size:40px;
+	}
+	
+	.icon{
+		width:30%;
+		height:auto;
+	}
+/*	result*/
+	.caption p{
+		font-size:12px;
+		margin-right:10px;
+	}
+	
+/*	footer*/
+	footer{
+		font-size:14px;
+	}
+	
+}
+
+@media all and (max-width: 670px) {
+	/*header*/
+	.container{
+		width:100%;
+		padding:0 15px;
+	}
+	
+	h2{
+		font-size:24px;
+	}
+	
+	
+	p{
+		font-size:14px;
+	}
+	
+	.position p, .lightingDesigner p,.programmer p{
+		line-height: 27px;
+	}
+	
+	.index-head{
+		display:none;
+	}
+	
+	.hamburger{
+		display: block;
+	}
+	
+	
+	header img{
+		padding-top: 10px;
+		width:10%;
+	}
+	
+	.btn-trigger, .btn-trigger span {
+		display: block;
+	}
+/*	top-view*/
+	.top_imgs{
+		padding:140px 0px 60px 0px;
+	}
+	
+	.twitter,.youtube{
+		font-size:18px;
+	}
+	
+	.top_title{
+		top:40.07%;
+		width: 85%;
+	}
+
+	.top_sub{
+		width: 25%;
+	}
+/*.position*/
+	.position {
+		padding: 50px 0px 50px 0px;
+	}
+	.position h3{
+		font-size:22px;
+	}
+	
+	.position p{
+		font-size:14px;
+	}
+/*lighting desginer*/
+	.lightingDesigner h3,.programmer h3{
+		font-size:20px;
+	}
+	.river p,.all-view p{
+		padding-top: 0px;
+		font-size:12px;
+	}
+	
+	.arrow_1{
+		margin-left:10px;
+	}
+	
+	.arrow_11{
+		width:20px;
+		height:20px;
+		border: 3px solid;
+		border-color: #34699A #34699A transparent transparent; transform: rotate(45deg);
+		margin-bottom:20px;
+	}
+	
+	.arrow_12{
+		width:20px;
+		height:20px;
+		border: 3px solid;
+		border-color: #34699A #34699A transparent transparent; transform: rotate(45deg);
+		margin-bottom:20px;
+	}
+/*	programming*/
+	.program-in{
+		display:none;
+	}
+	
+	.prog-des-all{
+		padding-top:30px;
+	}
+	
+	.prog-des{
+		padding-bottom:50px;
+		width:48%;
+	}
+	
+	.prog-des p{
+		font-size:10px;
+		padding-top:0px;
+	}
+	
+	.result{
+		padding-top: 80px;
+	}
+	
+	.caption{
+		padding-bottom:50px; 	
+	}
+	
+	.caption p{
+		font-size:12px;
+		padding-top: 0px;
+		margin-right: 0px;
+	}
+	
+	.caption_in{
+		display:none;
+	}
+	
+	.caption_res{
+		padding-top:15px;
+		display: block;
+	}
+	
+/*footer*/
+	footer{
+		font-size:10px;
+	}
+	
+	footer ul{
+		padding-left:10px;
+	}
+
+}
