@@ -20,12 +20,29 @@ $(function() {
 	<div class ="wrapper">
 		<header>
 			<div class ="container">
-				<ul>
+				<ul class="index-head">
 					<li><a href ="#profile-head">About</a></li>
 					<li>/</li>
 					<li><a href ="#works-head">Works</a></li>
 				</ul>
-				<img class="top-btn" src ="Image/toppage_2/logoMark.png">
+				<nav class="global-nav">
+					<ul class="global-nav__list">
+						<li class="global-nav__item"><a href="#profile-head">About</a></li>
+						<li class="global-nav__item"><a href="#works-head">Works</a></li>
+						<li class="global-nav__item"><a href="">Fashion Show</a></li>
+						<li class="global-nav__item"><a href="techtech.html">Media Art</a></li>
+						<li class="global-nav__item"><a href="">Serious Game</a></li>
+						<li class="global-nav__item"><a href="">Lighting</a></li>
+						<li class="global-nav__item"><a href="">Programming</a></li>
+					</ul>
+				</nav>
+				<div class="hamburger" id="js-hamburger">
+					<span class="hamburger__line hamburger__line--1"></span>
+					<span class="hamburger__line hamburger__line--2"></span>
+					<span class="hamburger__line hamburger__line--3"></span>
+				</div>
+				<div class="black-bg" id="js-black-bg"></div>
+				<img class="top-btn" src ="Image/toppage_2/logoMark_0619@2x.png">
 			</div>
 		</header>
 		
@@ -226,12 +243,13 @@ $(function() {
 		
 		<footer>
 			<div class ="container">
-				<ul>
-					<li><a href ="#profile-head">About</a></li>
-					<li><a href ="#works-head">Works</a></li>
-				</ul>
-				<img class ="top-btn" src ="Image/toppage_2/logoMark.png">
-		 	</div>
+				<div class ="footer-wrapper">
+					<p>KatsubeTaisei</p>
+					<div class ="fb-vertical">
+						<a href ="https://www.facebook.com/katsubetaisei/"><span class="fab fa-facebook footer-facebook"></span></a>
+					</div>
+				</div>
+			</div>
 		</footer>
 	</div>
 	<script src ="js/index.js"></script>
