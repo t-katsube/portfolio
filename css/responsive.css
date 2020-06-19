@@ -2,55 +2,56 @@
 @media all and (max-width: 1100px) {
 	.container{
 		width:100%;
-		padding:0 15px;
+		padding:0 30px;
 	}
-	
-	.profile{
-		height:auto;
-		padding:100px 0px 150px 0px;
-	}
-	
-	.profile-title h2,.works-title h2{
-		font-size:35px;
-	}
-	
-	.profile_sq,.works_sq{
-		height:48px;
-	}
-	
-	.name-top h3{
-		font-size:20px;
-	}
-	
-	.name-top p{
-		font-size:13px;
-	}	
-	
-	.name-contents p{
+/*header*/
+	header{
 		font-size:14px;
 	}
 	
-	.skill-title h3{
-		font-size:20px;
+	.index-head li{
+		margin-left:15px;
 	}
 	
-	.skill-bottom{
-		margin-top:10px;
+	
+	header img{
+		width:25px;
+		padding-top:20px;
+		margin-left: 5px;
+	}
+/*programmer	*/
+	.transition_1,.transition_2{
+		width:12%;
+		padding:0 10px;
+	 }
+	.index_p{
+		font-size:9px;
+		display: none;
 	}
 	
-	.skill-name{
+	.pc{
+		font-size:40px;
+	}
+	
+	.icon{
+		width:30%;
+		height:auto;
+	}
+/*	result*/
+	.caption p{
 		font-size:12px;
+		margin-right:10px;
 	}
 	
-	.right-name{
-		font-size:30px;
-		top:23%;
+/*	footer*/
+	footer p{
+		font-size:14px;
 	}
 	
-	.left-name{
-		font-size:30px;
-		top:23%;
+	.footer-facebook{
+		font-size: 20px;
 	}
+	
 }
 
 @media all and (max-width: 670px) {
@@ -59,139 +60,178 @@
 		width:100%;
 		padding:0 15px;
 	}
-	header{
-		font-size:12px;
-		height:60px;
+	
+	h2{
+		font-size:24px;
 	}
 	
-	header ul{
-		padding:20px 0px 20px 0px;
+	
+	p{
+		font-size:14px;
+	}
+	
+	.position p, .lightingDesigner p,.programmer p{
+		line-height: 27px;
+	}
+	
+	.index-head{
+		display:none;
+	}
+	
+	.hamburger{
+		display: block;
 	}
 	
 	header img{
-		width:10%;
-		padding:12px 0px 10px 0px;
+		width:7%;
+		padding:12px 0px 10px 3px;
 	}
 	
-    /*topview	*/
-	.title p{
-		font-size:12px;
+	.btn-trigger, .btn-trigger span {
+		display: block;
 	}
-
-	.title-active{
-			padding:250px 0px;
+/*	top-view*/
+	.res-title{
+		display: block;
 	}
-	/*profile	*/
-	.profile{
-		height:auto;
+	.top_imgs{
+		padding:70px 0px 40px 0px;
 	}
 	
-	.left-container img{
-		float:none;
-		display:none;
-	}
-	
-	.profile-responsive{
-		display:block;
-		width:70%;
-		margin: 0 auto;
-		padding-top:20px;
-	}
-	
-	.right-message{
-		float:none;
-		width:100%;
-	}
-	
-	.profile-title h2,.works-title h2{
-		font-size:30px;
-	}
-	
-	.profile_sq,.works_sq{
-		height:40px;
-	}
-	
-	.name-top h3{
-		font-size:20px;
-	}
-	
-	.name-top p{
-		font-size:15px;
-	}	
-	
-	.name-contents p{
-		font-size:14px;
-	}
-
-	.my-facebook{
-			font-size:20px;
-	}
-	
-	.skill-title h3{
-		font-size:20px;
-	}
-	
-	.skill-bottom{
-		margin-top:15px;
-	}
-	
-	.skill-name{
-		font-size:12px;
-	}
-	
-	.skills-icon img{
-	width:50%;
-	}
-    /*	works*/
-	.works-message{
-		padding:100px 0px 150px 0px;
-		height:auto;
-	}
-	
-	.right-content,.left-content{
-		height:6.2%;
-		padding-bottom: 200px;
-	}
-	
-	.white-filter-r,.white-filter-l{
-		width:100%;
-		float:none;
+	.h1{
 		display: none;
 	}
 	
-	.right-content img,.left-content img{
-		width:100%;
-		left:0;
+	.top_tri_02,.top_tri_01,.top_title,.top_sub{
+		display: none;
 	}
 	
-	.right-name,.left-name {
+	.sns{
+		display: block;
+		display: flex;
+		justify-content: center;
+		padding-top: 10px;
+		
+	}
+	
+	.twitter,.youtube{
+		font-size:18px;
+		position:static;
+		opacity: 1.0;
+		padding: 0 7px;
+		color:#707070;
+	}
+	
+	.twitter:hover,.youtube:hover{
+		color:#707070;
+	}
+	
+
+/*.position*/
+	.position {
+		padding: 50px 0px 50px 0px;
+	}
+	.position h3{
+		font-size:18px;
+	}
+	
+	.position p{
+		font-size:14px;
+	}
+/*lighting desginer*/
+	.lightingDesigner h3,.programmer h3{
+		font-size:16px;
+	}
+	
+	.river,.all-view{
+		display: none;
+	}
+	
+	.slideshow_2{
+		display: block;
+	}
+	
+	.slideshow_3{
+		display: block;
+	}
+	
+	.be-af{
+		display: block;
+	}
+	
+	.lightingDesigner-script{
+		padding-bottom: 20px;
+	}
+	.programmer .bx-next{
+		display: block;
+	}
+
+	.programmer .bx-prev{
+		display: block;
+	}
+
+	.lightingDesigner .bx-next{
+		display: block;
+	}
+
+	.lightingDesigner .bx-prev{
+		display: block;
+	}
+
+/*	programming*/
+	.program-in{
 		display:none;
 	}
 	
-	.content-responsive p{
-		display:block;
-		text-align: center;
-		margin:0 auto;
-		font-size:20px;
-		z-index:50;
+	.programmer-script{
+		padding-bottom: 20px;
 	}
 	
-	.content-responsive{
-		z-index:50;
+	.prog-des-all{
+		display: none;
 	}
-	/*footer	*/
-	footer {
+	
+	
+	.result{
+		padding-top: 80px;
+	}
+	
+	.bx-pager-item {
+		margin:0 2px;
+	}
+	
+	
+	.caption{
+		padding-bottom:50px; 	
+	}
+	
+	.caption p{
 		font-size:12px;
-		height:auto;
+		padding-top: 0px;
+		margin-right: 0px;
 	}
-	footer img{
-		width:10%;
-		padding:20px 0px;
+	
+	.caption_in{
+		display:none;
+	}
+	
+	.caption_res{
+		padding-top:15px;
+		display: block;
+	}
+	
+/*footer*/
+	footer p{
+		font-size:12px;
+	}
+	
+	.footer-wrapper{
+		padding:10px 0px;
+	}
+	.footer-facebook{
+		font-size: 20px;
+		padding-top: 5px;
 	}
 
-	footer ul{
-			padding-top: 20px;
-	}
-	
-	
+
 }
