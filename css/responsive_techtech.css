@@ -2,19 +2,22 @@
 @media all and (max-width: 1100px) {
 	.container{
 		width:100%;
-		padding:0 15px;
+		padding:0 30px;
 	}
 /*header*/
 	header{
 		font-size:14px;
 	}
 	
-	header li{
+	.index-head li{
 		margin-left:15px;
 	}
 	
+	
 	header img{
-		width:40px;
+		width:25px;
+		padding-top:20px;
+		margin-left: 5px;
 	}
 /*programmer	*/
 	.transition_1,.transition_2{
@@ -41,8 +44,12 @@
 	}
 	
 /*	footer*/
-	footer{
+	footer p{
 		font-size:14px;
+	}
+	
+	.footer-facebook{
+		font-size: 20px;
 	}
 	
 }
@@ -75,39 +82,57 @@
 		display: block;
 	}
 	
-	
 	header img{
-		padding-top: 10px;
-		width:10%;
+		width:7%;
+		padding:12px 0px 10px 3px;
 	}
 	
 	.btn-trigger, .btn-trigger span {
 		display: block;
 	}
 /*	top-view*/
-	
+	.res-title{
+		display: block;
+	}
 	.top_imgs{
-		padding:70px 0px 30px 0px;
+		padding:70px 0px 40px 0px;
+	}
+	
+	.h1{
+		display: none;
+	}
+	
+	.top_tri_02,.top_tri_01,.top_title,.top_sub{
+		display: none;
+	}
+	
+	.sns{
+		display: block;
+		display: flex;
+		justify-content: center;
+		padding-top: 10px;
+		
 	}
 	
 	.twitter,.youtube{
 		font-size:18px;
+		position:static;
+		opacity: 1.0;
+		padding: 0 7px;
+		color:#707070;
 	}
 	
-	.top_title{
-		top:40.07%;
-		width: 85%;
+	.twitter:hover,.youtube:hover{
+		color:#707070;
 	}
+	
 
-	.top_sub{
-		width: 25%;
-	}
 /*.position*/
 	.position {
 		padding: 50px 0px 50px 0px;
 	}
 	.position h3{
-		font-size:22px;
+		font-size:18px;
 	}
 	
 	.position p{
@@ -115,54 +140,66 @@
 	}
 /*lighting desginer*/
 	.lightingDesigner h3,.programmer h3{
-		font-size:20px;
-	}
-	.river p,.all-view p{
-		padding-top: 0px;
-		font-size:12px;
+		font-size:16px;
 	}
 	
-	.arrow_1{
-		margin-left:10px;
+	.river,.all-view{
+		display: none;
 	}
 	
-	.arrow_11{
-		width:20px;
-		height:20px;
-		border: 3px solid;
-		border-color: #34699A #34699A transparent transparent; transform: rotate(45deg);
-		margin-bottom:20px;
+	.slideshow_2{
+		display: block;
 	}
 	
-	.arrow_12{
-		width:20px;
-		height:20px;
-		border: 3px solid;
-		border-color: #34699A #34699A transparent transparent; transform: rotate(45deg);
-		margin-bottom:20px;
+	.slideshow_3{
+		display: block;
 	}
+	
+	.be-af{
+		display: block;
+	}
+	
+	.lightingDesigner-script{
+		padding-bottom: 20px;
+	}
+	.programmer .bx-next{
+		display: block;
+	}
+
+	.programmer .bx-prev{
+		display: block;
+	}
+
+	.lightingDesigner .bx-next{
+		display: block;
+	}
+
+	.lightingDesigner .bx-prev{
+		display: block;
+	}
+
 /*	programming*/
 	.program-in{
 		display:none;
 	}
 	
+	.programmer-script{
+		padding-bottom: 20px;
+	}
+	
 	.prog-des-all{
-		padding-top:30px;
+		display: none;
 	}
 	
-	.prog-des{
-		padding-bottom:50px;
-		width:48%;
-	}
-	
-	.prog-des p{
-		font-size:10px;
-		padding-top:0px;
-	}
 	
 	.result{
 		padding-top: 80px;
 	}
+	
+	.bx-pager-item {
+		margin:0 2px;
+	}
+	
 	
 	.caption{
 		padding-bottom:50px; 	
@@ -184,12 +221,17 @@
 	}
 	
 /*footer*/
-	footer{
-		font-size:10px;
+	footer p{
+		font-size:12px;
 	}
 	
-	footer ul{
-		padding-left:10px;
+	.footer-wrapper{
+		padding:10px 0px;
 	}
+	.footer-facebook{
+		font-size: 20px;
+		padding-top: 5px;
+	}
+
 
 }
