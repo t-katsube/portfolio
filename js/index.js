@@ -24,7 +24,7 @@ $(function(){
     		$('.effect-1').each(function(){
 				// 要素のドキュメント上の位置を取得
       			var offset_top = $(this).offset().top,
-          		top_margin = 100 ; // 画面上端からのマージン
+          		top_margin = 300 ; // 画面上端からのマージン
       			// スクロール量と要素の位置からマージンを引いた値を比較
       			if( scroll_top > offset_top - top_margin ){
         			// スクロール量が所定の位置を越えた時にfadeinクラスを付与
@@ -40,7 +40,7 @@ $(function(){
 			$('.effect-2').each(function(){
 				// 要素のドキュメント上の位置を取得
       			var offset_top = $(this).offset().top,
-          		top_margin = 100 ; // 画面上端からのマージン
+          		top_margin = 400 ; // 画面上端からのマージン
       			// スクロール量と要素の位置からマージンを引いた値を比較
       			if( scroll_top > offset_top - top_margin ){
         			// スクロール量が所定の位置を越えた時にfadeinクラスを付与
@@ -88,5 +88,19 @@ $(function(){
 			},function(){
 					$('#white-filter-5').fadeTo(500, 1.0);
 		});
+
+		function toggleNav() {
+			var body = document.body;
+			var hamburger = document.getElementById('js-hamburger');
+			var blackBg = document.getElementById('js-black-bg');
+
+			hamburger.addEventListener('click', function() {
+				body.classList.toggle('nav-open');
+			});
+			blackBg.addEventListener('click', function() {
+				body.classList.remove('nav-open');
+			});
+		}
+		toggleNav();
 	
 });
