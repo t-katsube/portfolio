@@ -151,9 +151,6 @@ header img{
   text-decoration: none;
   color: white;
 }
-.global-nav__item a:hover {
-  background-color: #eee;
-}
 .hamburger__line {
   position: absolute;
   left: 11px;
