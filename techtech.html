@@ -16,6 +16,14 @@
 		$('.slideshow').bxSlider({
 			touchEnabled: true
 		});
+		$('.slideshow_2').bxSlider({
+			pager:false,touchEnabled: true
+		});
+		$('.slideshow_3').bxSlider({
+			pager:false,touchEnabled: true,captions:true
+			
+		});
+		
 	});
  </script>
 
@@ -46,7 +54,7 @@ $(function() {
 				</ul>
 				<nav class="global-nav">
 					<ul class="global-nav__list">
-						<li class="global-nav__item"><a href="">Fashion show</a></li>
+						<li class="global-nav__item"><a href="">Fashion Show</a></li>
 						<li class="global-nav__item"><a href="">Media Art</a></li>
 						<li class="global-nav__item"><a href="">Serious Game</a></li>
 						<li class="global-nav__item"><a href="">Lighting</a></li>
@@ -59,7 +67,7 @@ $(function() {
 					<span class="hamburger__line hamburger__line--3"></span>
 				</div>
 				<div class="black-bg" id="js-black-bg"></div>
-				<a href ="index.html"><img class="top-btn" src ="Image/toppage_2/logoMark.png"></a>
+				<a href ="index.html"><img class="top-btn" src ="Image/toppage_2/logoMark_0619@2x.png"></a>
 			</div>
 		</header>
 
@@ -72,11 +80,18 @@ $(function() {
 						</div>
 						<img class ="top_tri_02" src ="techtech_image/top_tri_02.png">
 						<img class ="top_tri_01" src ="techtech_image/top_tri_01.png">
-						<h1><img class ="top_title" src ="techtech_image/top_title_tech_4_2@2x.png" alt ="techtech"></h1>
+						<h1 class ="h1"><img class ="top_title" src ="techtech_image/top_title_tech_4_2@2x.png" alt ="techtech"></h1>
 						<p><img class ="top_sub" src ="techtech_image/top_sub_tech_4@2x.png" alt ="人、自然、テクノロジーの融合をテーマに、日本庭園を用いたインタラクティブア
 						ーと作品"></p>
-						<a href ="https://twitter.com/tech_tech2019"><div class ="twitter fab fa-twitter"></div></a>
-						<div class="youtube fab fa-youtube"></div>
+						<div class ="res-title">
+							<h1>techtech</h1>
+							<p>人、自然、テクノロジーの融合をテーマに、日本庭園を用いたインタラクティブア
+							ート作品</p>
+						</div>
+						<div class ="sns">
+							<a href ="https://twitter.com/tech_tech2019"><div class ="twitter fab fa-twitter"></div></a>
+							<div class="youtube fab fa-youtube"></div>
+						</div>
 					</div>
 				</div>
 			</div>
@@ -127,7 +142,17 @@ $(function() {
 						<img src ="techtech_image/all_after.png">
 						<p>After</p>
 					</div>
-				</div>			
+				</div>
+				<ul class ="slideshow_2">
+					<li class ="slide"><img src ="techtech_image/river_before.png" alt="before"></li>
+					<li class ="slide"><img src ="techtech_image/river_after.png" alt="after"></li>
+				</ul>
+				<p class ="be-af">Before / After</p>
+				<ul class ="slideshow_2">
+					<li class ="slide"><img src ="techtech_image/all_before.png" alt="before"></li>
+					<li class ="slide"><img src ="techtech_image/all_after.png" alt="after"></li>
+				</ul>
+				<p class ="be-af">Before / After</p>
 			</div>
 		</div>
 
@@ -183,6 +208,12 @@ $(function() {
 						<p>4.対岸の照明の色と明るさが変わる</p>
 					</div>
 				</div>
+				<ul class ="slideshow_3">
+					<li class ="slide"><img src ="techtech_image/prog_01.png" title="1.照明コンテンツの遊び方の説明"></li>
+					<li class ="slide"><img src ="techtech_image/prog_02.png" title="2.照明を操作するボード"></li>
+					<li class ="slide"><img src ="techtech_image/prog_03.png" title="3.ボードに手を置く"></li>
+					<li class ="slide"><img src ="techtech_image/prog_04.png" title ="4.対岸の照明の色と明るさが変わる"></li>
+				</ul>
 			</div>
 		</div>
 
@@ -217,18 +248,12 @@ $(function() {
 
 		<footer>
 			<div class ="container">
-				<ul>
-					<li><a href ="#profile-head">Serious Game</a></li>
-					<li><a href ="#works-head">Programming</a></li>
-				</ul>
-				<ul>
-					<li><a href ="#profile-head">Media Art</a></li>
-					<li><a href ="#works-head">Lighting</a></li>
-				</ul>
-				<ul>
-					<li><a href ="#profile-head">Fashion Show</a></li>
-				</ul>
-			  <img class ="top-btn" src ="Image/toppage_2/logoMark.png">
+				<div class ="footer-wrapper">
+					<p>KatsubeTaisei</p>
+					<div class ="fb-vertical">
+						<a href ="https://www.facebook.com/katsubetaisei/"><span class="fab fa-facebook footer-facebook"></span></a>
+					</div>
+				</div>
 			</div>
 		</footer>
 
