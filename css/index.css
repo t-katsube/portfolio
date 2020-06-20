@@ -38,7 +38,6 @@ html,body{
 .container{
   max-width:1080px;
   width: 100%;
-/*  padding: 0px 10px;*/
   margin: 0 auto;
 }
 /*header*/
@@ -68,18 +67,22 @@ header{
 	margin-left:30px;
 }
 
+.index-head a{
+		color:white;
+}
+
 header img{
 	padding:17px 0px;
 	cursor: pointer;
 }
 
-header a{
+.header-link{
 	color:white;
 	position: relative;
     display: inline-block;
 }
 
-header a::after {
+.header-link::after {
   position: absolute;
   bottom: 0px;
   left: 0;
@@ -92,7 +95,7 @@ header a::after {
   transition: transform .3s;
 }
 
-header a:hover::after {
+.header-link:hover::after {
   transform-origin: left top;
   transform: scale(1, 1);
 }
@@ -100,23 +103,23 @@ header a:hover::after {
 /*グローバルメニュー*/
 .global-nav {
   position: fixed;
-  right: -320px; /* これで隠れる */
+  right: -320px; 
   top: 0;
-  width: 300px; /* スマホに収まるくらい */
+  width: 300px; 
   height: 100vh;
   padding-top: 40px;
   background-color: #34699A;
   transition: all .6s;
   z-index: 200;
-  overflow-y: auto; /* メニューが多くなったらスクロールできるように */
+  overflow-y: auto; 
 }
 .hamburger {
   display: none;
   position: absolute;
   right: 0;
   top: 0;
-  width: 60px; /* クリックしやすいようにちゃんと幅を指定する */
-  height: 40px; /* クリックしやすいようにちゃんと高さを指定する */
+  width: 60px; 
+  height: 40px; 
   cursor: pointer;
   z-index: 300;
   margin-top: 7px;
@@ -195,7 +198,6 @@ header a:hover::after {
 	background-image:url("../Image/toppage_2/topview_0611_2.jpg");
 	background-size: cover;
 	width:100%;
-/*	height:845px;*/
 }
 
 .title-active{
@@ -242,12 +244,6 @@ header a:hover::after {
 }
 
 
-/*
-.profile-message{
-	padding:100px 0px;
-	margin:0 auto;
-}
-*/
 .opacity{
 	opacity:0;
 }
@@ -297,30 +293,11 @@ header a:hover::after {
 	color:#3b5998;
 	}
 
-.right-container{
-/*
-	height:586px;
-	width:640px;
-	background-color:rgba(17,63,103,0.8);
-	z-index:100;
-	float:right;
-	display: flex;
-  	justify-content: center;
-  	align-items: center;
-*/
-}
-
 .right-message{
 	float:right;
-/*	height:531px;*/
 	width:50%;
 	color:#333333;
 	margin-top:30px;
-}
-
-.name{
-/*	height:197px;*/
-/*margin-bottom:*/
 }
 
 .name-top h3{
@@ -346,7 +323,6 @@ header a:hover::after {
 
 /*skill*/
 .skill{
-/*	height:326px;*/
 	margin-top:20px;
 	width:100%;
 }
@@ -358,7 +334,6 @@ header a:hover::after {
 }
 
 .skill-all{
-/*	height:264px;*/
 	margin-top:25px;
 }
 
@@ -387,7 +362,6 @@ header a:hover::after {
 
 /*Works*/
 .works{
-/*	height:2898px;*/
 	background-image: url("../Image/toppage_2/background-Tri_1.png");
 	width:100%;
 	background-position:right top;
@@ -599,17 +573,6 @@ footer p{
 
 
 /*animete*/
-/*
-.white-filter-r:hover{
-	opacity:0;
-	transition:1.0s;
-}
-
-.white-filter-l:hover{
-	opacity:0;
-	transition:1.0s;
-}
-*/
 
 .fadein-bottom{
 	animation-name: fadeinBottom;
