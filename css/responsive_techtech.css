@@ -1,0 +1,239 @@
+/* タブレット向けレイアウト */
+@media all and (max-width: 1100px) {
+	.container{
+		width:100%;
+		padding:0 30px;
+	}
+/*header*/
+	header{
+		font-size:14px;
+	}
+	
+	.index-head li{
+		margin-left:15px;
+	}
+	
+	
+	header img{
+		width:25px;
+		padding-top:20px;
+		margin-left: 5px;
+	}
+/*programmer	*/
+	.transition_1,.transition_2{
+		width:12%;
+		padding:0 10px;
+	 }
+	.index_p{
+		font-size:9px;
+		display: none;
+	}
+	
+	.pc{
+		font-size:40px;
+	}
+	
+	.icon{
+		width:30%;
+		height:auto;
+	}
+/*	result*/
+	.caption p{
+		font-size:12px;
+		margin-right:10px;
+	}
+	
+/*	footer*/
+	footer p{
+		font-size:14px;
+	}
+	
+	.footer-facebook{
+		font-size: 20px;
+	}
+	
+}
+
+@media all and (max-width: 670px) {
+	/*header*/
+	.container{
+		width:100%;
+		padding:0 15px;
+	}
+	
+	h2{
+		font-size:24px;
+	}
+	
+	
+	p{
+		font-size:14px;
+	}
+	
+	.position p, .lightingDesigner p,.programmer p{
+		line-height: 27px;
+	}
+	
+	.index-head{
+		display:none;
+	}
+	
+	.hamburger{
+		display: block;
+	}
+	
+	header img{
+		width:7%;
+		padding:12px 0px 10px 3px;
+	}
+	
+	.btn-trigger, .btn-trigger span {
+		display: block;
+	}
+/*	top-view*/
+	.res-title{
+		display: block;
+		opacity:0;
+	}
+	.top_imgs{
+		padding:70px 0px 40px 0px;
+	}
+	
+	.h1{
+		display: none;
+	}
+	
+	.top_tri_02,.top_tri_01,.top_title,.top_sub{
+		display: none;
+	}
+	
+	.sns{
+		display: block;
+		display: flex;
+		justify-content: center;
+		padding-top: 10px;
+		opacity: 0;
+		
+	}
+	
+	.twitter,.youtube{
+		font-size:24px;
+		position:static;
+		opacity: 1.0;
+		margin: 0 15px;
+		color:#707070;
+	}
+	
+	.twitter:hover,.youtube:hover{
+		color:#707070;
+	}
+	
+
+/*.position*/
+	.position {
+		padding: 50px 0px 50px 0px;
+	}
+	.position h3{
+		font-size:18px;
+	}
+	
+	.position p{
+		font-size:14px;
+	}
+/*lighting desginer*/
+	.lightingDesigner h3,.programmer h3{
+		font-size:16px;
+	}
+	
+	.river,.all-view{
+		display: none;
+	}
+	
+	.slideshow_2{
+		display: block;
+	}
+	
+	.slideshow_3{
+		display: block;
+	}
+	
+	.be-af{
+		display: block;
+	}
+	
+	.lightingDesigner-script{
+		padding-bottom: 20px;
+	}
+	.programmer .bx-next{
+		display: block;
+	}
+
+	.programmer .bx-prev{
+		display: block;
+	}
+
+	.lightingDesigner .bx-next{
+		display: block;
+	}
+
+	.lightingDesigner .bx-prev{
+		display: block;
+	}
+
+/*	programming*/
+	.program-in{
+		display:none;
+	}
+	
+	.programmer-script{
+		padding-bottom: 20px;
+	}
+	
+	.prog-des-all{
+		display: none;
+	}
+	
+	
+	.result{
+		padding-top: 80px;
+	}
+	
+	.bx-pager-item {
+		margin:0 2px;
+	}
+	
+	
+	.caption{
+		padding-bottom:50px; 	
+	}
+	
+	.caption p{
+		font-size:12px;
+		padding-top: 0px;
+		margin-right: 0px;
+	}
+	
+	.caption_in{
+		display:none;
+	}
+	
+	.caption_res{
+		padding-top:15px;
+		display: block;
+	}
+	
+/*footer*/
+	footer p{
+		font-size:12px;
+	}
+	
+	.footer-wrapper{
+		padding:10px 0px;
+	}
+	.footer-facebook{
+		font-size: 20px;
+		padding-top: 5px;
+	}
+
+
+}
