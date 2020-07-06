@@ -1,0 +1,218 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Katsube Taisei</title>
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.0/css/all.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<script src="https://code.jquery.com/ui/1.12.0/jquery-ui.js"></script>
+<script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css">
+<link rel="stylesheet" href="css/tsubuyaita.css">
+<link rel="stylesheet" href="css/responsive_tsubuyaita.css">
+  
+ <script>
+	$(document).ready(function(){
+		$('.slideshow').bxSlider({
+			touchEnabled: true
+		});
+		$('.slideshow_2').bxSlider({
+			pager:false,touchEnabled: true,captions:true
+		});
+		$('.slideshow_3').bxSlider({
+			pager:false,touchEnabled: true,captions:true
+			
+		});
+		
+	});
+	
+ </script>
+
+</head>
+
+<body style="visibility:hidden" onLoad="document.body.style.visibility='visible'">
+	<div class="wrapper">
+		<header>
+			<div class ="container">
+				<ul class ="index-head">
+					<li><a class="header_link" href ="cba.html">Fashion show</a></li>
+					<li>/</li>
+					<li><a class="header_link" href ="techtech.html">Media Art</a></li>
+					<li>/</li>
+					<li><a class="header_link"href ="tsubuyaita.html">Serious Game</a></li>
+					<li>/</li>
+					<li><a class="header_link" href ="lighting.html">Lighting</a></li>
+					<li>/</li>
+					<li><a class="header_link" href ="programing.html">Programming</a></li>
+				</ul>
+				<nav class="global-nav">
+					<ul class="global-nav__list">
+						<li class="global-nav__item"><a href="cba.html">Fashion Show</a></li>
+						<li class="global-nav__item"><a href="techtech.html">Media Art</a></li>
+						<li class="global-nav__item"><a href="tsubuyaita.html">Serious Game</a></li>
+						<li class="global-nav__item"><a href="lighting.html">Lighting</a></li>
+						<li class="global-nav__item"><a href="programing.html">Programming</a></li>
+					</ul>
+				</nav>
+				<div class="hamburger" id="js-hamburger">
+					<span class="hamburger__line hamburger__line--1"></span>
+					<span class="hamburger__line hamburger__line--2"></span>
+					<span class="hamburger__line hamburger__line--3"></span>
+				</div>
+				<div class="black-bg" id="js-black-bg"></div>
+				<a href ="index.html"><img class="top-btn" src ="Image/toppage_2/logoMark_0619@2x.png"></a>
+			</div>
+		</header>
+
+		<div class ="top-view">
+			<div class ="container">
+				<div class ="top_imgs">
+					<div class ="top_relative">
+						<div class ="top_back_1 slide_img">
+							<img class ="top_back_1_img" src ="tsubuyaita_image/tsubuyaita_top.jpg">
+						</div>
+						<div class ="top_tri_02">
+							<img class ="top_tri_02_img" src ="techtech_image/top_tri_02.png">
+						</div>
+						<div id ="target" class ="top_tri_01">
+							<img class ="top_tri_01_img" src ="techtech_image/top_tri_01.png">
+						</div>
+						<div class ="top_title">
+							<h1 class ="h1"><img  class ="top_title_img"src ="tsubuyaita_image/tsubuyaita_title@2x.png" alt ="呟いただけなのに..."></h1>
+						</div>
+						<div class ="top_sub">
+							<p><img class ="top_sub_img" src ="tsubuyaita_image/tsubuyaita_sub@2x.png" alt ="ポジションは企画設計、照明、映像"></p>
+						</div>
+						<div class ="res-title">
+							<h1>呟いただけなのに...</h1>
+							<p>中・高生を対象に</p>
+							<p>メディラリテラシー教育を目的とした</p>
+							<p>Twitter風シューティングゲーム</p>
+						</div>
+						<div class ="sns">
+							<a href ="https://twitter.com/geijouten19"><div class ="twitter fab fa-twitter"></div></a>
+							<a href ="https://youtu.be/DMfna9U-S6k"><div class="youtube fab fa-youtube"></div></a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class ="position">
+			<div class ="container">
+				<h2 class ="position-title title-border">Position</h2>
+				<h3>Plannner</h3>
+				<p>企画立案の一人としてゲームを考えた。近年、未成年のSNSにまつわる事件が多く発生している。中学・高校生に座学ではなく、「体験」としてメディアリテラシーを伝えることでそれについて考えるきっかけを与えられると考えた。</p>
+				<h3>Movie Stuff</h3>
+				<p>ゲームのエンディングに流れる映像を製作した。スコアによって、エンディング映像が変わる仕組みになっている。</p>
+				<h3>Lighting Designer</h3>
+				<p>ゲームの正解・不正解に応じて、照明の光が変化するプログラムを製作した。</p>
+			</div>
+		</div>
+
+		<div class ="content-1">
+			<div class ="container">
+				<h2 class ="title-1 title-border">Planner</h2>
+				<h3>企画設計の流れ</h3>
+				<div class ="script-1">
+					<p>3つの流れで制作した。</p>
+					<p>1つ目に企画の概要を考える。ユーザーに楽しんでもらいながら、メディアリテラシーについて考えるきっかけを与えられることを目的とした。2つ目に簡単なUI設計である。3つ目に実装である。</p>
+				</div>
+				<div class ="flow-chart">
+					<div class ="flow-1">
+						<img src ="tsubuyaita_image/plan-3@2x.png">
+						<p>1.企画設計</p>
+					</div>
+					<div class ="arrow_1">
+						<div class ="arrow_11"></div>
+						<div class ="arrow_12"></div>
+					</div>
+					<div class ="flow-2">
+						<img src ="tsubuyaita_image/plan-1@2x.png">
+						<p>2.UIデザイン</p>
+					</div>
+					<div class ="arrow_1">
+						<div class ="arrow_11"></div>
+						<div class ="arrow_12"></div>
+					</div>
+					<div class ="flow-3">
+						<img src ="tsubuyaita_image/plan-2@2x.png">
+						<p>3.実装</p>
+					</div>
+				</div>
+				<ul class ="slideshow_2">
+					<li class ="slide"><img src ="tsubuyaita_image/plan-3@2x.png" alt="before" title="1.企画設計"></li>
+					<li class ="slide"><img src ="tsubuyaita_image/plan-1@2x.png" alt="after" title="2.UIデザイン"></li>
+					<li class ="slide"><img src ="tsubuyaita_image/plan-2@2x.png" alt="after" title="3.実装"></li>
+				</ul>
+			</div>
+		</div>
+
+		<div class ="content-2">
+			<div class ="container">
+				<h2 class ="title-2 title-border">Lighting Designer</h2>
+				<h3>照明の設計</h3>
+				<div class ="script-2">
+					<p>ゲームで正しい選択をした場合は、黄色の光がつき、間違った選択をした場合は、赤いストロボの光がつく。</p>
+				</div>
+				<div class ="prog-des-all">
+					<div class ="prog-des">
+						<img class ="prog-des-img"src ="tsubuyaita_image/prog_02.jpg">
+						<p>1.正解時の照明</p>
+					</div>
+					<div class ="prog-des">
+						<img class ="prog-des-img"src ="tsubuyaita_image/prog_01.jpg">
+						<p>2.不正解時の照明</p>
+					</div>
+				</div>
+				<ul class ="slideshow_3">
+					<li class ="slide"><img src ="tsubuyaita_image/prog_02.jpg" title="1.正解時の照明"></li>
+					<li class ="slide"><img src ="tsubuyaita_image/prog_01.jpg" title="2.不正解時の照明"></li>
+				</ul>
+			</div>
+		</div>
+
+		<div class ="result">
+			<div class ="container">
+				<h2 class ="result-title title-border">Result</h2>
+				<div class ="video">
+					<iframe src="https://www.youtube.com/embed/DMfna9U-S6k"frameborder="0" allowfullscreen></iframe>
+				</div>
+				<ul class ="slideshow">
+					<li class="slide"><img src ="tsubuyaita_image/result_01.jpg"></li>
+					<li class="slide"><img src ="tsubuyaita_image/result_02.jpg"></li>
+					<li class="slide"><img src ="tsubuyaita_image/result_03.jpg"></li>
+					<li class="slide"><img src ="tsubuyaita_image/result_04.jpg"></li>
+					<li class="slide"><img src ="tsubuyaita_image/result_05.jpg"></li>
+				</ul>
+				<div class ="caption">
+					<hr>
+					<div class ="caption_in">
+						<p>「呟いただけなのに...」</p>
+						<p>制作人数：4人　制作年：2020年　制作期間：3ヶ月　体験時間：3分　場所：九州大学大橋キャンパス</p>
+					</div>
+					<div class ="caption_res">
+						<p>タイトル：「呟いただけなのに...」</p>
+						<p>制作人数：4人　制作年：2020年　制作期間：3ヶ月　体験時間：3分</p>
+						<p>場所：九州大学大橋キャンパス</p>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<footer>
+			<div class ="container">
+				<div class ="footer-wrapper">
+					<p>KatsubeTaisei</p>
+					<div class ="fb-vertical">
+						<a href ="https://www.facebook.com/katsubetaisei/"><span class="fab fa-facebook footer-facebook"></span></a>
+					</div>
+				</div>
+			</div>
+		</footer>
+
+	</div>	
+<script src ="js/tsubuyaita.js"></script>	
+</body>
+</html>
