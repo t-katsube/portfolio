@@ -453,6 +453,7 @@ header img{
 
 .right-name a,.left-name a{
 	color:#333;
+	display: block;
 	
 }
 
