@@ -1,8 +1,15 @@
 //Document
+
 $(window).on('load', function (){
-//	$('#title').fadeIn();
-		$('.title').addClass('title-active')
-		$('header').delay(800).fadeIn(2000);
+// 		$('#loading').delay(1000).fadeOut();
+// //	$('#title').fadeIn();
+// 		$('.title').addClass('title-active')
+// 		$('header').delay(800).fadeIn(2000);
+
+		$( '#loading' ).delay(1000).fadeOut( 10, function() {
+    		$('.title').addClass('title-active')
+			$('header').delay(800).fadeIn(2000);
+		});
 		
 		// $('.top-btn').click(function(){
   //   		$('html,body').animate({ 
@@ -151,3 +158,7 @@ $(window).on('load', function (){
 		toggleNav();
 	
 });
+
+setTimeout(function(){
+		$( '#loading' ).fadeOut();
+	},5000);
