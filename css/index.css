@@ -201,7 +201,7 @@ header img{
 }
 
 .title-active{
-	padding:365px 0px;
+	padding:450px 0px;
 	margin:0 auto;
 	position:relative;
 	animation-name: fadeinBottom;
@@ -474,6 +474,17 @@ header img{
   	justify-content: center;
   	align-items: center;
 	overflow: hidden;
+	position: relative;
+}
+
+.right-names a{
+	position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    text-indent:-999px;
+    z-index: 2; /* 必要であればリンク要素の重なりのベース順序指定 */
 }
 
 .rigt-names02 {
@@ -492,7 +503,7 @@ header img{
   height: 100%;
   z-index: -1;
   background-color: #fff;
-  transition: all 300ms ease;
+  transition: all 300ms cubic-bezier(.37,.16,.19,.89);
 }
 .right-names:hover {
   color: #000;
@@ -509,15 +520,29 @@ header img{
   	justify-content: center;
   	align-items: center;
 	overflow: hidden;
+	position: relative;
+}
+
+.left-names a{
+	position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    text-indent:-999px;
+    z-index: 2; /* 必要であればリンク要素の重なりのベース順序指定 */
+
 }
 
 .left-names02 {
   overflow: hidden;
 }
+
 .left-names {
   position: relative;
   z-index: 2;
 }
+
 .left-names:before {
   content: '';
   position: absolute;
@@ -527,14 +552,21 @@ header img{
   height: 100%;
   z-index: -1;
   background-color: #fff;
-  transition: all 300ms ease;
+  transition: all 300ms cubic-bezier(.37,.16,.19,.89);
 }
+
 .left-names:hover{
   color: #000;
 }
+
 .left-names:hover:before{
   left: 0;
 }
+
+.leftAdd:before{
+	left: 0;
+}
+
 
 
 /*footer*/
