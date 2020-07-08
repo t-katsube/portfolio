@@ -56,38 +56,85 @@ $(window).on('load', function (){
   		});
 		$('#name-1').hover(
 			function(){
-					$('#white-filter-1').fadeTo(500, 0);
+					$('#white-filter-1').fadeTo(300, 0);
 			},function(){
-					$('#white-filter-1').fadeTo(500, 1.0);
+					$('#white-filter-1').fadeTo(300, 1.0);
 		});
 		
 		$('#name-2').hover(
 			function(){
-					$('#white-filter-2').fadeTo(500, 0);
+					$('#white-filter-2').fadeTo(300, 0);
 			},function(){
-					$('#white-filter-2').fadeTo(500, 1.0);
+					$('#white-filter-2').fadeTo(300, 1.0);
 		});
 		
 		$('#name-3').hover(
 			function(){
-					$('#white-filter-3').fadeTo(500, 0);
+					$('#white-filter-3').fadeTo(300, 0);
 			},function(){
-					$('#white-filter-3').fadeTo(500, 1.0);
+					$('#white-filter-3').fadeTo(300, 1.0);
 		});
 		
 		$('#name-4').hover(
 			function(){
-					$('#white-filter-4').fadeTo(500, 0);
+					$('#white-filter-4').fadeTo(300, 0);
 			},function(){
-					$('#white-filter-4').fadeTo(500, 1.0);
+					$('#white-filter-4').fadeTo(300, 1.0);
 		});
 		
 		$('#name-5').hover(
 			function(){
-					$('#white-filter-5').fadeTo(500, 0);
+					$('#white-filter-5').fadeTo(300, 0);
 			},function(){
-					$('#white-filter-5').fadeTo(500, 1.0);
+					$('#white-filter-5').fadeTo(300, 1.0);
 		});
+
+		$('#white-filter-1').hover(
+			function(){
+				$('#name-1').addClass('leftAdd');
+				$(this).fadeTo(300, 0);
+		},function(){
+				$('#name-1').removeClass('leftAdd');
+				$(this).fadeTo(300, 1.0);
+		});
+
+		$('#white-filter-2').hover(
+			function(){
+				$('#name-2').addClass('leftAdd');
+				$(this).fadeTo(300, 0);
+		},function(){
+				$('#name-2').removeClass('leftAdd');
+				$(this).fadeTo(300, 1.0);
+		});
+
+		$('#white-filter-3').hover(
+			function(){
+				$('#name-3').addClass('leftAdd');
+				$(this).fadeTo(300, 0);
+		},function(){
+				$('#name-3').removeClass('leftAdd');
+				$(this).fadeTo(300, 1.0);
+		});
+
+		$('#white-filter-4').hover(
+			function(){
+				$('#name-4').addClass('leftAdd');
+				$(this).fadeTo(300, 0);
+		},function(){
+				$('#name-4').removeClass('leftAdd');
+				$(this).fadeTo(300, 1.0);
+		});
+
+		$('#white-filter-5').hover(
+			function(){
+				$('#name-5').addClass('leftAdd');
+				$(this).fadeTo(300, 0);
+		},function(){
+				$('#name-5').removeClass('leftAdd');
+				$(this).fadeTo(300, 1.0);
+		});
+
+		
 
 		function toggleNav() {
 			var body = document.body;
