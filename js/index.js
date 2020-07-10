@@ -158,7 +158,3 @@ $(window).on('load', function (){
 		toggleNav();
 	
 });
-
-setTimeout(function(){
-		$( '#loading' ).fadeOut();
-	},5000);
